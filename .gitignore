@@ -1,0 +1,6 @@
+*.log
+*.zip
+*.pyc
+*.orig
+*.swp
+Thumbs.db

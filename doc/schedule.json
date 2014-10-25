@@ -1,0 +1,25 @@
+{
+	"departures": [
+		{"status": "Canceled", "city": "New York City", "busnum": null, "company": "Greyhound", "time": "8:05PM", "gate": "7"},
+		{"status": "Canceled", "city": "Boston", "busnum": "1383", "company": "Trans-Pacific", "time": "9:00PM", "gate": "8"},
+		{"status": "On Time", "city": "Dorchester", "busnum": "1378", "company": "Anna", "time": "9:15PM", "gate": "10"},
+		{"status": "On Time", "city": "Flushing", "busnum": "1598", "company": "Ck Tours", "time": "9:30PM", "gate": "6"},
+		{"status": "Boarding", "city": "Danbury", "busnum": "5199", "company": "Land/Jet", "time": "10:00PM", "gate": "9"},
+		{"status": "Boarding", "city": "Fairfield", "busnum": "2286", "company": "Ecs", "time": "11:00PM", "gate": "4"},
+		{"status": "On Time", "city": "Cranston", "busnum": null, "company": "S.Howard Bus", "time": "11:00PM", "gate": "12"},
+		{"status": "On Time", "city": "Flushing", "busnum": "1898", "company": "Ck Tours", "time": "11:30PM", "gate": "4"},
+		{"status": "Delayed", "city": "Wareham", "busnum": "NA", "company": "Tremblay'S", "time": "11:30PM", "gate": "5"},
+		{"status": "Delayed", "city": "Wareham", "busnum": "NA", "company": "Tremblay'S", "time": "11:30PM", "gate": "5"},
+		{"status": "Delayed", "city": "Wareham", "busnum": "NA", "company": "Tremblay'S", "time": "11:30PM", "gate": "5"},
+		{"status": "Delayed", "city": "Wareham", "busnum": "NA", "company": "Tremblay'S", "time": "11:30PM", "gate": "5"}
+	],
+	"arrivals": [
+		{"status":"Delayed", "city": "Boston", "company": "Greyhound", "time": "8:05PM"},
+		{"status": "Projected", "city": "Flushing", "company": "Ck Tours", "time": "9:30PM"},
+		{"status": "Projected", "city": "Flushing", "company": "Ck Tours", "time": "10:45PM"},
+		{"status": "Projected", "city": "Boston", "company": "Trans-Pacific", "time": "11:30PM"},
+		{"status": "Projected", "city": "Flushing", "company": "Ck Tours", "time": "11:30PM"},
+		{"status": "Projected", "city": "Dorchester", "company": "Anna", "time": "11:45PM"},
+		{"status": "Projected", "city": "New York", "company": "Win Li Tours", "time": "11:45PM"}
+	]
+}

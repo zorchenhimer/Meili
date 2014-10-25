@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<businfo>
+	<departures>
+		<bus>
+			<time> 8:05PM</time>
+			<city>New York City</city>
+			<company>Greyhound</company>
+			<busnum></busnum>
+			<gate>7</gate>
+			<status>Canceled</status>
+		</bus>
+		<bus>
+			<time> 9:00PM</time>
+			<city>Boston</city>
+			<company>Trans-Pacific</company>
+			<busnum>1383</busnum>
+			<gate>8</gate>
+			<status>Canceled</status>
+		</bus>
+		<bus>
+			<time> 9:15PM</time>
+			<city>Dorchester</city>
+			<company>Anna</company>
+			<busnum>1378</busnum>
+			<gate>10</gate>
+			<status>On Time</status>
+		</bus>
+		<bus>
+			<time> 9:30PM</time>
+			<city>Flushing</city>
+			<company>Ck Tours</company>
+			<busnum>1598</busnum>
+			<gate>6</gate>
+			<status>On Time</status>
+		</bus>
+		<bus>
+			<time>10:00PM</time>
+			<city>Danbury</city>
+			<company>Land/Jet</company>
+			<busnum>5199</busnum>
+			<gate>9</gate>
+			<status>Boarding</status>
+		</bus>
+		<bus>
+			<time>11:00PM</time>
+			<city>Fairfield</city>
+			<company>Ecs</company>
+			<busnum>2286</busnum>
+			<gate>4</gate>
+			<status>Boarding</status>
+		</bus>
+		<bus>
+			<time>11:00PM</time>
+			<city>Cranston</city>
+			<company>S.Howard Bus</company>
+			<busnum></busnum>
+			<gate>12</gate>
+			<status>On Time</status>
+		</bus>
+		<bus>
+			<time>11:30PM</time>
+			<city>Flushing</city>
+			<company>Ck Tours</company>
+			<busnum>1898</busnum>
+			<gate>4</gate>
+			<status>On Time</status>
+		</bus>
+		<bus>
+			<time>11:30PM</time>
+			<city>Wareham</city>
+			<company>Tremblay&apos;s</company>
+			<busnum>NA</busnum>
+			<gate>5</gate>
+			<status>Delayed</status>
+		</bus>
+		<bus>
+			<time>11:30PM</time>
+			<city>Wareham</city>
+			<company>Tremblay&apos;s</company>
+			<busnum>NA</busnum>
+			<gate>5</gate>
+			<status>Delayed</status>
+		</bus>
+		<bus>
+			<time>11:30PM</time>
+			<city>Wareham</city>
+			<company>Tremblay&apos;s</company>
+			<busnum>NA</busnum>
+			<gate>5</gate>
+			<status>Delayed</status>
+		</bus>
+		<bus>
+			<time>11:30PM</time>
+			<city>Wareham</city>
+			<company>Tremblay&apos;s</company>
+			<busnum>NA</busnum>
+			<gate>5</gate>
+			<status>Delayed</status>
+		</bus>
+	</departures>
+	<arrivals>
+		<bus>
+			<time> 8:05PM</time>
+			<city>Boston</city>
+			<company>Greyhound</company>
+			<status>Delayed</status>
+		</bus>
+		<bus>
+			<time> 9:30PM</time>
+			<city>Flushing</city>
+			<company>Ck Tours</company>
+			<status>Projected</status>
+		</bus>
+		<bus>
+			<time>10:45PM</time>
+			<city>Flushing</city>
+			<company>Ck Tours</company>
+			<status>Projected</status>
+		</bus>
+		<bus>
+			<time>11:30PM</time>
+			<city>Boston</city>
+			<company>Trans-Pacific</company>
+			<status>Projected</status>
+		</bus>
+		<bus>
+			<time>11:30PM</time>
+			<city>Flushing</city>
+			<company>Ck Tours</company>
+			<status>Projected</status>
+		</bus>
+		<bus>
+			<time>11:45PM</time>
+			<city>Dorchester</city>
+			<company>Anna</company>
+			<status>Projected</status>
+		</bus>
+		<bus>
+			<time>11:45PM</time>
+			<city>New York</city>
+			<company>Win Li Tours</company>
+			<status>Projected</status>
+		</bus>
+	</arrivals>
+</businfo>
