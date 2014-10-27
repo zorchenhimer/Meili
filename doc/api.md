@@ -1,0 +1,28 @@
+# API Reference
+
+## HTTP Passive API
+
+- `/schedule.json` - Grab the current schedule with default time scope
+- `/schedule.xml` - Like `/schedule.json`, only serve XML instead of JSON.
+- `/schedule` - Accepts the following variables. All are optional.
+	- `format` - Either `json` (default) or `xml`.
+	- `start` - Get buses after this time. Time formatted as a Unix timestamp.
+	- `end` - Get buses before this time. Time formatted as a Unix timestamp.
+	- `count` - Return this many buses at most.  Defaults to 50.
+	- `status` - Only return buses with the given status, defaults to 'all'.  Miltiple statuses need to be comma delimited.  Accepted values:
+		- `all` - All buses within time range.
+		- `on-time` - Confirmed on time.
+		- `canceled` - Confirmed canceled.
+		- `boarding` - Currently boarding.
+		- `delayed` - Confirmed delayed or already late.
+		- `projected` - Unconfirmed on time.
+		- `departed` - Bus is gone.
+- `/status` - Returns general status of the server
+- `/status?type={type}` - Where `{type}` is one of the following:
+	- `servertime` - Current time on the server. Returned as Unix timestamp.
+	- `lastupdate` - Timestamp of the last update.
+	- `displays` - Return info the server has about display instances.
+
+## TCP Active API
+
+TODO.
