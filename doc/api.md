@@ -2,8 +2,6 @@
 
 ## HTTP Passive API
 
-- `/schedule.json` - Grab the current schedule with default time scope
-- `/schedule.xml` - Like `/schedule.json`, only serve XML instead of JSON.
 - `/schedule` - Accepts the following variables. All are optional.
 	- `format` - Either `json` (default) or `xml`.
 	- `start` - Get buses after this time. Time formatted as a Unix timestamp.
@@ -17,6 +15,8 @@
 		- `delayed` - Confirmed delayed or already late.
 		- `projected` - Unconfirmed on time.
 		- `departed` - Bus is gone.
+- `/schedule.json` - Alias for `/schedule?type=json`
+- `/schedule.xml` - Alias for `/schedule?type=xml`
 - `/status` - Returns general status of the server
 - `/status?type={type}` - Where `{type}` is one of the following:
 	- `servertime` - Current time on the server. Returned as Unix timestamp.
