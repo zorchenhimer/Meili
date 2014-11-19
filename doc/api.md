@@ -22,6 +22,7 @@
 	- `servertime` - Current time on the server. Returned as Unix timestamp.
 	- `lastupdate` - Timestamp of the last update.
 	- `displays` - Return info the server has about display instances.
+	- `version` - Return the API version the server is using
 
 ## TCP Active API
 
