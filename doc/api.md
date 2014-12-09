@@ -23,7 +23,25 @@
 	- `lastupdate` - Timestamp of the last update.
 	- `displays` - Return info the server has about display instances.
 	- `version` - Return the API version the server is using
-
+- `/add` - add a new bus to to the database.  All fields are required.  `gate` and `busnum` are only for arrivals.
+	- `type`
+		- `arrival`
+		- `departure`
+	- `company`
+	- `city`
+	- `time`
+	- `status`
+	- `gate` - required for departures
+	- `busnum` - required for departures
+- `/modify` - `id` is required, all others optional.
+	- `id` - ID of the bus to modify
+	- `company`
+	- `city`
+	- `time`
+	- `status`
+	- `gate` - departures only
+	- `busnum` - departures only
+	
 ## TCP Active API
 
 TODO.
