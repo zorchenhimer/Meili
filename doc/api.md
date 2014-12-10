@@ -15,24 +15,28 @@
 		- `delayed` - Confirmed delayed or already late.
 		- `projected` - Unconfirmed on time.
 		- `departed` - Bus is gone.
-- `/schedule.json` - Alias for `/schedule?type=json`
-- `/schedule.xml` - Alias for `/schedule?type=xml`
+- `/schedule.json` - Alias for `/schedule?format=json`
+- `/schedule.xml` - Alias for `/schedule?format=xml`
 - `/status` - Returns general status of the server
 - `/status?type={type}` - Where `{type}` is one of the following:
 	- `servertime` - Current time on the server. Returned as Unix timestamp.
 	- `lastupdate` - Timestamp of the last update.
 	- `displays` - Return info the server has about display instances.
 	- `version` - Return the API version the server is using
-- `/add` - add a new bus to to the database.  All fields are required.  `gate` and `busnum` are only for arrivals.
-	- `type`
-		- `arrival`
-		- `departure`
+- `/add_arrival` - add a new arrival to to the database.  All fields except `format` are required.
 	- `company`
 	- `city`
 	- `time`
 	- `status`
-	- `gate` - required for departures
-	- `busnum` - required for departures
+	- `format` - Format of the response message, either `json` or `xml`.
+- `/add_departure` - add a new departure to to the database.  All fields except `format` are required.
+	- `company`
+	- `city`
+	- `time`
+	- `status`
+	- `gate`
+	- `busnum`
+	- `format` - Format of the response message, either `json` or `xml`.
 - `/modify` - `id` is required, all others optional.
 	- `id` - ID of the bus to modify
 	- `company`
@@ -41,6 +45,7 @@
 	- `status`
 	- `gate` - departures only
 	- `busnum` - departures only
+	- `format` - Format of the response message, either `json` or `xml`.
 	
 ## TCP Active API
 
