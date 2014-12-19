@@ -1,4 +1,4 @@
-# API Reference
+# API Specification
 
 ## HTTP Passive API
 
@@ -23,12 +23,15 @@
 	- `lastupdate` - Timestamp of the last update.
 	- `displays` - Return info the server has about display instances.
 	- `version` - Return the API version the server is using
+
+The following are only avalable as HTTP POST requests.  All fields are required unless otherwise specified.
+
 - `/add_arrival` - add a new arrival to to the database.  All fields except `format` are required.
 	- `company`
 	- `city`
 	- `time`
 	- `status`
-	- `format` - Format of the response message, either `json` or `xml`.
+	- `format` - *Optional* - Format of the response message, either `json` or `xml`.
 - `/add_departure` - add a new departure to to the database.  All fields except `format` are required.
 	- `company`
 	- `city`
@@ -36,7 +39,7 @@
 	- `status`
 	- `gate`
 	- `busnum`
-	- `format` - Format of the response message, either `json` or `xml`.
+	- `format` - *Optional* - Format of the response message, either `json` or `xml`.
 - `/modify` - `id` is required, all others optional.
 	- `id` - ID of the bus to modify
 	- `company`
@@ -45,8 +48,4 @@
 	- `status`
 	- `gate` - departures only
 	- `busnum` - departures only
-	- `format` - Format of the response message, either `json` or `xml`.
-	
-## TCP Active API
-
-TODO.
+	- `format` - *Optional* - Format of the response message, either `json` or `xml`.
