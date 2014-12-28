@@ -85,10 +85,10 @@ class ScreenController():
 		
 		# FIXME: proper error handling and checking needed here.
 		if config.SourceURI[-4:] == '.xml':
-			self.Source = ds.JSONSource()
+			self.Source = ds.XMLSource()
 			Debug('XML source found.')
 		else:
-			self.Source = ds.XMLSource()
+			self.Source = ds.JSONSource()
 			Debug('JSON source found.')
 			
 		self.CachedList = Data.BusList()
@@ -242,18 +242,22 @@ class BusRow(pygame.sprite.Sprite):
 		self.rect = self.image.get_rect()
 		
 		del self.rendered_text[:]
-		if self.Data.Time.lower() != "time":
-			self.Data.Time = self.Data.Time.lower()
+		timestring = ''
+		if type(self.Data.Time) is str:
+			timestring = self.Data.Time.title()
+		else:
+			## Assume timestamp
+			timestring = time.strftime('%I:%M%p', time.localtime(self.Data.Time)).lower()
 		
-		self.rendered_text.append(self.font.render(self.Data.Time, True, self.fontcolor).convert_alpha())
+		self.rendered_text.append(self.font.render(timestring, True, self.fontcolor).convert_alpha())
 		self.rendered_text.append(self.font.render(self.Data.City, True, self.fontcolor).convert_alpha())
 		self.rendered_text.append(self.font.render(self.Data.Company, True, self.fontcolor).convert_alpha())
 		
 		if self.Data.is_departure():
-			self.rendered_text.append(self.font.render(self.Data.Gate, True, self.fontcolor).convert_alpha())
+			self.rendered_text.append(self.font.render(self.Data.Gate.title(), True, self.fontcolor).convert_alpha())
 			self.rendered_text.append(self.font.render(self.Data.Number, True, self.fontcolor).convert_alpha())
 			
-		self.rendered_text.append(self.font.render(self.Data.Status, True, self.fontcolor).convert_alpha())
+		self.rendered_text.append(self.font.render(self.Data.Status.title(), True, self.fontcolor).convert_alpha())
 			
 		midoffset = self.image.get_height() / 4			
 		
