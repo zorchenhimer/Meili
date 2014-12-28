@@ -1,6 +1,7 @@
 #!/usr/bin/python2
 
 import sqlite3 as lite
+import os
 import time
 import Data
 
@@ -75,6 +76,9 @@ class SQLiteDB(BaseDB):
 		self.dbfile = 'archive.db'
 		self.conn = None
 		self.LastRowcount = 0
+		if os.path.isfile(self.dbfile) is False:
+			## DB not found.  Initing an empty one.
+			self.init_db()
 		
 	def init_db(self):
 		sql_file = open('dbinit.sql', 'r')
