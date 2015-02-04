@@ -1,3 +1,6 @@
 [submodule "server"]
 	path = server
 	url = https://github.com/zorchenhimer/Meili-Server.git
+[submodule "display"]
+	path = display
+	url = https://github.com/zorchenhimer/Meili-Display.git
